@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="script.js" defer></script>
 
     <title>Document</title>
 </head>
 <body>
+    <div class="form">
 
-    <h2>Calcola il Prezzo del Biglietto</h2>
-   <label for="username">Username</label>
-   <input type="text" name="username" id="username">
-   
-   
-   <label for="age">Age</label>
-   <input type="text" name="age" id="age">
-   
-   <label for="km">Km</label>
-   <input type="text" name="km" id="km">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+        <div class="box-form">
+
+            
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+            
+            
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age">
+            
+            <label for="km">Km</label>
+            <input type="text" name="km" id="km">
+         
+         
+            <button id="result">GENERA</button>
+
+        </div>
 
 
-   <button id="result">GENERA</button>
+    </div>
 
-   <div id="ticket"></div>
+    <div class="resultticket">
+        <h2>IL TUO BIGLIETTO</h2>
 
-   
+        <div class="box-detail">
+            <h3>DETTAGLIO PASSEGGERI</h3>
 
+            <div class="flex info">
+                <div class="flex detail">
+                    
+                    <h4>NOME PASSEGGERO</h4>
+                    <div id="namepassenger"></div>
+    
+    
+
+                </div>
+                <div class="flex price">
+
+                    <h3>Costo Biglietto</h3>
+
+                    <div id="ticket"></div>
+
+
+                </div>
+        
+
+            </div>
+
+           
+
+        </div>
+    
+
+    </div>
 
     
 </body>

@@ -1,13 +1,11 @@
 
-// Calcolo prezzo biglietto
-
-//let biglietto = km * 0.21;
-
 // Imposto la Condizione
 const addUsername = document.getElementById('username');
 const age = document.getElementById('age');
 const addKm = document.getElementById('km');
 const result = document.getElementById('result');
+const name = document.getElementById('namepassenger');
+
 
 result.addEventListener('click', 
     function() {
@@ -20,6 +18,11 @@ result.addEventListener('click',
         let addKm = parseInt(km.value);
         console.log(addKm);
 
+
+
+
+        // Calcolo Biglietto
+        
         let biglietto = addKm * 0.21;
         
         
@@ -37,13 +40,12 @@ result.addEventListener('click',
 
     }
     
-    document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
+    document.getElementById('ticket').innerHTML = biglietto.toFixed(2) + '€' ;
+    document.getElementById('namepassenger').innerHTML = addUser;
     }
 
 )
 
-
-// document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
 
 
 
