@@ -27,24 +27,18 @@ result.addEventListener('click',
     if (addAge < 18) {
     let Percentuale20 = (biglietto / 100) * 20;
     biglietto = biglietto - Percentuale20;
-    document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
     
-    
-    
+       
     } else if (addAge > 65) {
     let Percentuale40 = (biglietto / 100) * 40;
     biglietto = biglietto - Percentuale40;
+    
+
+
+    }
+    
     document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
-
-    
-
-
     }
-    
-    
-    }
-
-   
 
 )
 
