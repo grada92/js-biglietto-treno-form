@@ -24,6 +24,10 @@
     gap: 20px;
 }
 
+.gap40 {
+    gap:100px;
+}
+
 
 #result {
     padding: 15px;
@@ -81,6 +85,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
 }
+
 
 h2 {
     text-align: center;
