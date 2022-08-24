@@ -29,6 +29,7 @@
     padding: 15px;
     border-radius: 10px;
     color:hsl(338deg 70% 37%);
+    font-size: 15px;
 }
 
 input {
