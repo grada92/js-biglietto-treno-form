@@ -20,12 +20,14 @@
     flex-direction: column;
 }
 
-.gap30 {
-    gap: 30px;
+.gap20 {
+    gap: 20px;
 }
 
-.buttonresult {
-    height: 20px;
+#result {
+    padding: 15px;
+    border-radius: 10px;
+    color:hsl(338deg 70% 37%);
 }
 
 .box-form {
@@ -62,7 +64,8 @@
 }
 
 .datiform {
-    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 .info {
     flex-direction: row;
@@ -90,4 +93,9 @@ h4 {
     gap: 30px;
 }
 
+/* hover */
 
+#result:hover {
+    cursor: pointer;
+    border: 2px yellow solid;
+}
