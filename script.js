@@ -1,31 +1,56 @@
 
-const etaPasseggero = prompt ('quanti anni hai?');
-const textAsNumber = parseInt(etaPasseggero);
-
-console.log(textAsNumber);
-
-const km = prompt ('quanti km vuoi percorrere?')
-const number = parseInt(km);
-
-console.log(km);
-
 // Calcolo prezzo biglietto
 
-let biglietto = km * 0.21;
+//let biglietto = km * 0.21;
 
 // Imposto la Condizione
+const addUsername = document.getElementById('username');
+const age = document.getElementById('age');
+const addKm = document.getElementById('km');
+const result = document.getElementById('result');
 
-if (textAsNumber < 18) {
+result.addEventListener('click', 
+    function() {
+        let addUser = addUsername.value;
+        console.log(addUser);
+
+        let addAge = parseInt(age.value);
+        console.log(addAge);
+
+        let addKm = parseInt(km.value);
+        console.log(addKm);
+
+        let biglietto = addKm * 0.21;
+        console.log(biglietto);
+
+    if (age < 18) {
     let Percentuale20 = (biglietto / 100) * 20;
     biglietto = biglietto - Percentuale20;
+    document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
+
     
-} else if (textAsNumber > 65) {
+    
+    
+    } else if (age > 65) {
     let Percentuale40 = (biglietto / 100) * 40;
     biglietto = biglietto - Percentuale40;
-}
-//   console.log(biglietto)
-// document.writeln('prezzofinale2');
+    
 
-document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
+
+    }
+    
+    
+    }
+
+   
+
+)
+
+
+// document.getElementById('ticket').innerHTML = 'il prezzo del biglietto è' + biglietto.toFixed(2)
+
+
+
+
 
 
