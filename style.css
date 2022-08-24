@@ -24,10 +24,17 @@
     gap: 20px;
 }
 
+
 #result {
     padding: 15px;
     border-radius: 10px;
     color:hsl(338deg 70% 37%);
+}
+
+input {
+    border-radius: 5px;
+    color:hsl(338deg 70% 37%);
+    height: 30px;
 }
 
 .box-form {
@@ -44,6 +51,8 @@
 .formUser {
     justify-content: center;
     gap: 30px;
+    color:hsl(338deg 70% 37%);
+    font-size: 20px;
 }
 .box-detail {
     justify-content: start;
