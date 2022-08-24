@@ -1,11 +1,9 @@
-
 // Imposto la Condizione
 const addUsername = document.getElementById('username');
 const age = document.getElementById('age');
 const addKm = document.getElementById('km');
 const result = document.getElementById('result');
 const name = document.getElementById('namepassenger');
-
 
 result.addEventListener('click', 
     function() {
@@ -23,9 +21,6 @@ result.addEventListener('click',
         let biglietto = addKm * 0.21;
         let offerta = 'biglietto standard';
 
-
-               
-
     if (addAge < 18) {
     let Percentuale20 = (biglietto / 100) * 20;
     biglietto = biglietto - Percentuale20;
@@ -37,7 +32,6 @@ result.addEventListener('click',
     biglietto = biglietto - Percentuale40;
     offerta = 'biglietto scontato';
     
-
     }
     
     document.getElementById('ticket').innerHTML = biglietto.toFixed(2) + '€' ;
