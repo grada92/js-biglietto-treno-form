@@ -41,6 +41,7 @@
 
 .formUser {
     justify-content: center;
+    gap: 30px;
 }
 .box-detail {
     justify-content: start;
